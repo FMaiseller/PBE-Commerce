@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Loja Espacial</title>
+    <link rel="stylesheet" href="css/styleIndex.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="https://i.imgur.com/A7ToCor.png" alt="Logo" class="logo"
+      /></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="roupas.html">Roupas</a>
+        <a href="acessorios.html">Acessórios</a>
+        <a href="tenis.html">Tênis</a>
+        <a href="esporte.html">Esporte</a>
+        <a href="carrinho.html" id="cartIcon" title="Ver carrinho">
+          🛒
+          <span id="cartCount">0</span>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Bem-vindo à Loja Espacial</h1>
+
+      <!-- Carrossel de Imagens -->
+      <div class="carrosel-container">
+        <div class="carrosel">
+          <img
+            src="https://imgcentauro-a.akamaihd.net/1200x1200/98665231A3.jpg"
+            alt="Moda 1"
+            class="carrosel-img active"
+          />
+          <img
+            src="https://fujiokadistribuidor.vteximg.com.br/arquivos/ids/269290"
+            alt="Moda 2"
+            class="carrosel-img"
+          />
+          <img
+            src="https://cdn.awsli.com.br/64x50/561/561579/produto/318304503/f8212508-b51e-4adb-a653-fc59bad09a73-gfqcqupa4y.jfif"
+            alt="Moda 3"
+            class="carrosel-img"
+          />
+          <img
+            src="https://shoxstore.com.br/media/catalog/product/a/d/adxsp1fgly_1.png"
+            alt="Moda 4"
+            class="carrosel-img"
+          />
+        </div>
+
+        <!-- Controles do Carrossel -->
+        <button class="carrosel-btn prev" onclick="voltaSlide()">
+          &#10094;
+        </button>
+        <button class="carrosel-btn next" onclick="proxSlide()">
+          &#10095;
+        </button>
+
+        <!-- Indicadores -->
+        <div class="carrosel-indicators">
+          <span class="indicator active" onclick="atualSlide(0)"></span>
+          <span class="indicator" onclick="atualSlide(1)"></span>
+          <span class="indicator" onclick="atualSlide(2)"></span>
+          <span class="indicator" onclick="atualSlide(3)"></span>
+        </div>
+      </div>
+
+      <p>
+        Somos uma loja ficticia, especializada em roupas com estilo, onde nosso
+        lema é: você ficará tão estiloso que irá parecer de outro planeta,
+        trazendo qualidade e inovação para você. Nosso compromisso é oferecer
+        produtos incríveis e atendimento personalizado para que sua experiência
+        seja única.
+      </p>
+      <p>
+        Navegue pelas categorias abaixo e descubra as últimas tendências
+        disponíveis para todos os gostos!
+      </p>
+      <p>
+        Qualquer duvida estaremos a disposição por meio do número 21 999999999
+      </p>
+      <!-- Imagens -->
+      <div class="categorias">
+        <a class="categorias-card" href="roupas.html" title="Roupas">
+          <img
+            src="https://www.shutterstock.com/image-illustration/two-tshirts-one-black-white-600nw-2510578569.jpg"
+            alt="Roupas"
+          />
+          <h3>Roupas</h3>
+        </a>
+        <a class="categorias-card" href="acessorios.html" title="Acessórios">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_NP_903039-CBT74615129603_022024-O-rosto-vero-mostrando-bone-pequeno-pontiagudo-em-marca-moda.webp"
+            alt="Acessórios Espaciais"
+          />
+          <h3>Acessórios</h3>
+        </a>
+        <a class="categorias-card" href="tenis.html" title="Tênis">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtr-Trq1B0S2-GbcmvyLMM_ck2_SPAjxikhdPM0FdWcvBHxb6LjvCTDOgQiwz4z60I2cs&usqp=CAU"
+            alt="Tênis"
+          />
+          <h3>Tênis</h3>
+        </a>
+        <a class="categorias-card" href="esporte.html" title="Esporte">
+          <img
+            src="https://assets.adidas.com/images/w_600,f_auto,q_auto/151ff56f034e433bb922873362829042_9366/CHUTEIRA_X_CRAZYFAST.1_FG_Branco_HQ4516_HM1.jpg"
+            alt="Equipamento Esportivo"
+          />
+          <h3>Esporte</h3>
+        </a>
+      </div>
+    </main>
+    <footer>&copy; 2025 Loja Espacial - Felipe</footer>
+    <script src="scripts/scrIndex.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roupas - Loja Espacial</title>
+    <link rel="stylesheet" href="css/styleRoupas.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="https://i.imgur.com/A7ToCor.png" alt="Logo" class="logo"
+      /></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="roupas.html">Roupas</a>
+        <a href="acessorios.html">Acessórios</a>
+        <a href="tenis.html">Tênis</a>
+        <a href="esporte.html">Esporte</a>
+        <a href="carrinho.html" id="cartIcon" title="Ver carrinho">
+          🛒
+          <span id="cartCount">0</span>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Roupas</h2>
+      <div class="productList">
+        <div
+          class="productCard"
+          data-id="1"
+          data-nome="Calça preta Adidas"
+          data-preco="79.90"
+        >
+          <img
+            src="https://imgcentauro-a.akamaihd.net/1200x1200/98665231A3.jpg"
+            alt="Calça Preta Adidas "
+          />
+          <h3>Calça Preta Adidas</h3>
+          <div class="preco">R$ 79,90</div>
+          <select>
+            <option value="P">P</option>
+            <option value="M" selected>M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+          </select>
+          <button class="addBtn">Adicionar ao carrinho</button>
+        </div>
+
+        <div
+          class="productCard"
+          data-id="2"
+          data-nome="Blusa Vermelha Adidas"
+          data-preco="199.90"
+        >
+          <img
+            src="https://assets.adidas.com/images/w_600,f_auto,q_auto/dc06adf61aab4e499ba9aefb00f92577_9366/Camiseta_Adicolor_Classics_3-Stripes_Vermelho_IA4852_01_laydown.jpg"
+            alt="Blusa Vermelha Adidas"
+          />
+          <h3>Blusa Vermelha Adidas</h3>
+          <div class="preco">R$ 199,90</div>
+          <select>
+            <option value="P">P</option>
+            <option value="M" selected>M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+          </select>
+          <button class="addBtn">Adicionar ao carrinho</button>
+        </div>
+
+        <div
+          class="productCard"
+          data-id="3"
+          data-nome="Blusa Vasco da Gama"
+          data-preco="129.90"
+        >
+          <img
+            src="https://images.tcdn.com.br/img/img_prod/1006590/camisa_vasco_beau_kappa_masculina_branca_5277_1_92644003861511bb4c383aef57e8b7ea.jpg"
+            alt="Blusa Vasco"
+          />
+          <h3>Blusa Vasco da Gama</h3>
+          <div class="preco">R$ 129,90</div>
+          <select>
+            <option value="P">P</option>
+            <option value="M" selected>M</option>
+            <option value="G">G</option>
+            <option value="GG">GG</option>
+          </select>
+          <button class="addBtn">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

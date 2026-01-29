@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1470&q=80")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #eee;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background: rgba(16, 16, 64, 0.85);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 15px #00f;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #66f;
+  text-shadow: 0 0 10px #66f;
+}
+.logo {
+  width: 85px;
+  height: 70px;
+  border-left-width: medium;
+}
+nav a {
+  color: #66f;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 20px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #aaf;
+}
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(0, 0, 40, 0.7);
+  border-radius: 12px;
+  flex: 1;
+}
+h1 {
+  font-size: 32px;
+  color: #99f;
+  text-align: center;
+  text-shadow: 0 0 15px #99f;
+  margin-bottom: 20px;
+}
+#cartIcon {
+  position: relative;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #66f;
+  user-select: none;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#cartIcon:hover {
+  box-shadow: 0 4px 12px rgba(0, 80, 255, 0.4);
+}
+
+#cartCount {
+  position: absolute;
+  top: -8px;
+  right: -12px;
+  background: #66f;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 14px;
+}
+.carrosel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #4488ff88;
+}
+
+.carrosel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.carrosel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.carrosel-img.active {
+  opacity: 1;
+}
+
+.carrosel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(102, 102, 255, 0.7);
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+  border-radius: 4px;
+}
+
+.carrosel-btn:hover {
+  background: rgba(102, 102, 255, 1);
+}
+
+.carrosel-btn.prev {
+  left: 10px;
+}
+
+.carrosel-btn.next {
+  right: 10px;
+}
+
+.carrosel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.indicator.active {
+  background: #66f;
+}
+
+.indicator:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  max-width: 900px;
+  margin: 0 auto 25px;
+  text-align: justify;
+  color: #ccc;
+}
+.categorias {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.categorias-card {
+  background: rgba(51, 51, 102, 0.8);
+  border-radius: 10px;
+  width: 220px;
+  margin: 15px;
+  text-align: center;
+  color: #bbf;
+  box-shadow: 0 0 8px #448;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+}
+.categorias-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #77f;
+}
+.categorias-card img {
+  width: 100%;
+  height: 140px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  border-bottom: 2px solid #66f;
+}
+.categorias-card h3 {
+  margin: 15px 0;
+  font-size: 20px;
+}
+footer {
+  background: rgba(16, 16, 64, 0.85);
+  color: #66f;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  font-size: 14px;
+  box-shadow: 0 -3px 10px #00f;
+  margin-top: auto;
+}

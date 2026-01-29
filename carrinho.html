@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrinho - Loja Espacial</title>
+    <link rel="stylesheet" href="css/styleCarrinho.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="https://i.imgur.com/A7ToCor.png" alt="Logo" class="logo"
+      /></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="roupas.html">Roupas</a>
+        <a href="acessorios.html">Acessórios</a>
+        <a href="tenis.html">Tênis</a>
+        <a href="esporte.html">Esporte</a>
+        <a href="carrinho.html" id="cartIcon" title="Ver carrinho">
+          🛒 <span id="cartCount">0</span>
+        </a>
+      </nav>
+    </header>
+    <main>
+      <h2>Seu Carrinho</h2>
+      <div class="cart-items"></div>
+      <div id="total">Total: R$ 0,00</div>
+
+      <label for="endereco">Endereço de Entrega:</label>
+      <textarea
+        id="endereco"
+        rows="3"
+        placeholder="Digite seu endereço completo"
+      ></textarea>
+
+      <div class="buttons-container">
+        <button id="confirm-btn">Confirmar Compra</button>
+        <button id="limparBtn">Limpar Carrinho</button>
+      </div>
+
+    <script src="scripts/scriptCarrinho.js"></script>
+  </body>
+</html>
