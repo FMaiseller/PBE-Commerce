@@ -1,5 +1,6 @@
 # PBE-Commerce
 Created with CodeSandbox
+
 PBE-Commerce é um sistema de e-commerce criado como parte da atividade acadêmica da faculdade.
 Ele simula uma loja online onde usuários podem visualizar produtos, adicionar ao carrinho e realizar pedidos de forma fictícia. 
 Esse projeto tem como objetivo aplicar conceitos de integração frontend/backend e lógica de navegação de um sistema web.
